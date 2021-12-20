@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong number</title>
+</head>
+<body>
+    <script>
+        var number=prompt("please enter the number");
+        var temp=number;
+        var sum=0;
+        while(temp>0){
+            var digit=temp%10;
+            sum+=digit**3;
+            temp=parseInt(temp/10);
+
+        }
+        if (sum==number){
+            console.log("armstrong number")
+        }else{
+            console.log("is not a armstrong number")
+        }
+
+
+    </script>
+    
+</body>
+</html>
